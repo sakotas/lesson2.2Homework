@@ -13,6 +13,8 @@
 		5DB0F8831E6C61AA0076B1B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB0F8811E6C61AA0076B1B1 /* Main.storyboard */; };
 		5DB0F8851E6C61AA0076B1B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB0F8841E6C61AA0076B1B1 /* Assets.xcassets */; };
 		5DB0F8881E6C61AA0076B1B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB0F8861E6C61AA0076B1B1 /* LaunchScreen.storyboard */; };
+		5DB0F8931E6C691C0076B1B1 /* photosArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0F8921E6C691C0076B1B1 /* photosArray.m */; };
+		5DB0F8961E6C6C020076B1B1 /* photoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0F8951E6C6C020076B1B1 /* photoTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		5DB0F8841E6C61AA0076B1B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DB0F8871E6C61AA0076B1B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DB0F8891E6C61AA0076B1B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DB0F8911E6C691C0076B1B1 /* photosArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = photosArray.h; sourceTree = "<group>"; };
+		5DB0F8921E6C691C0076B1B1 /* photosArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = photosArray.m; sourceTree = "<group>"; };
+		5DB0F8941E6C6C020076B1B1 /* photoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = photoTableViewController.h; sourceTree = "<group>"; };
+		5DB0F8951E6C6C020076B1B1 /* photoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = photoTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		5DB0F8771E6C61AA0076B1B1 /* Lesson2.2Homework */ = {
 			isa = PBXGroup;
 			children = (
+				5DB0F8901E6C68FC0076B1B1 /* Models */,
+				5DB0F88F1E6C68EA0076B1B1 /* Controllers */,
 				5DB0F87B1E6C61AA0076B1B1 /* AppDelegate.h */,
 				5DB0F87C1E6C61AA0076B1B1 /* AppDelegate.m */,
 				5DB0F87E1E6C61AA0076B1B1 /* ViewController.h */,
@@ -77,6 +85,24 @@
 				5DB0F8791E6C61AA0076B1B1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DB0F88F1E6C68EA0076B1B1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0F8941E6C6C020076B1B1 /* photoTableViewController.h */,
+				5DB0F8951E6C6C020076B1B1 /* photoTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5DB0F8901E6C68FC0076B1B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0F8911E6C691C0076B1B1 /* photosArray.h */,
+				5DB0F8921E6C691C0076B1B1 /* photosArray.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB0F8931E6C691C0076B1B1 /* photosArray.m in Sources */,
+				5DB0F8961E6C6C020076B1B1 /* photoTableViewController.m in Sources */,
 				5DB0F8801E6C61AA0076B1B1 /* ViewController.m in Sources */,
 				5DB0F87D1E6C61AA0076B1B1 /* AppDelegate.m in Sources */,
 				5DB0F87A1E6C61AA0076B1B1 /* main.m in Sources */,
@@ -309,6 +337,7 @@
 				5DB0F88E1E6C61AA0076B1B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

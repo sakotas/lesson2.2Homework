@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "photosArray.h"
 
 int main(int argc, char * argv[]) {
+    
+//    photosArray *images = [[photosArray alloc] createImagesArray];
+
+    
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
