@@ -10,7 +10,7 @@
 #import "photosArray.h"
 
 @interface photoTableViewController ()
-@property (strong) NSDictionary *images;
+@property (strong) NSArray *images;
 @end
 
 
@@ -45,24 +45,25 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imageIdentifier" forIndexPath:indexPath];
-    NSDictionary *dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:
-                                @"image1", @"sunrise",
-                                @"image2", @"waterfall",
-                                @"image3", @"forest",
-                                @"image4", @"mountain",
-                                @"image5", @"road",
-                                @"image6", @"lake",
-                                @"image7", @"sakura",
-                                @"image8", @"sunset",
-                                @"image9", @"river",
-                                @"image10",@"animals",  nil];
-    for (NSString *key in dictionary) {
-    cell.textLabel.text = key;
-        key = [NSEnumerator nextObject];
-    }
+
+    NSDictionary *pictures = [[NSDictionary alloc] initWithObjectsAndKeys:
+       @"image1", @"sunrise",
+       @"image2", @"waterfall",
+       @"image3", @"forest",
+       @"image4", @"mountain",
+       @"image5", @"road",
+       @"image6", @"lake",
+       @"image7", @"sakura",
+       @"image8", @"sunset",
+       @"image9", @"river",
+       @"image10",@"animals",  nil];
     
-    return cell;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellIdentifier" forIndexPath:indexPath];
+    for (NSString *key in pictures) {
+        cell.textLabel.text = [NSString stringWithFormat:@"%@", key];
+    } return cell;
+
+
 }
 
 /*

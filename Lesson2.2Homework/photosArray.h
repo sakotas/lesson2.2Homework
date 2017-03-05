@@ -10,6 +10,6 @@
 
 @interface photosArray : NSObject
 //-(NSDictionary*)createImagesArray;
-
-
+//-(NSDictionary*)createImagesArray;
+@property NSDictionary *dictionary;
 @end
